@@ -6,7 +6,7 @@ EXPOSE 7474
 EXPOSE 1337
 
 # Expose our data volumes
-VOLUME ["/data"]
+VOLUME ["/var/lib/neo4j/data"]
 
 
 ADD http://maven.alexdeleon.name.s3.amazonaws.com/snapshot/io-informatics/neo4j-rdf-plugin/1.1/neo4j-rdf-plugin-1.1.zip /tmp/neo4j-rdf-plugin-1.1.zip
